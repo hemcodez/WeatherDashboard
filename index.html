@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Weather Dashboard</h1>
-    <div class="container">
-        <div class="weather-input">
-            <h3>Enter a City Name</h3>
-            <input type="text" placeholder="E.g., New York, London, Tokyo">
-            <button class="search-btn">Search</button>
-            <div class="separator"></div>
-            <button class="location-btn">Use Current Location</button>
-        </div>
-        <div class="weather-data">
-            <div class="current-weather">
-                <div class="details">
-                    <h2>London(2023-06-19)</h2>
-                    <h4>Temperature: 19.10°C</h4>
-                    <h4>Wind: 4.31 M/S</h4>
-                    <h4>Humidity: 79%</h4>
+   <div class="container">
+    <div class="current-info">
+        <div class="date-container">
+            <div class="time" id="time">
+                05:30 <span id="am-pm">PM</span>
+            </div>
+            <div class="date" id="date">
+                Sunday, 13 August
+            </div>
+            <div class="others" id="current-weather-items">
+                <div class="weather-item">
+                    <div>Humidity</div>
+                    <div>78%</div>
                 </div>
-                <div class="icon">
-                    <img src="" alt="weather-icon"
+                <div class="weather-item">
+                    <div>Pressure</div>
+                    <div>29.96%</div>
+                </div>
+                <div class="weather-item">
+                    <div>Wind Speed</div>
+                    <div>5mph</div>
                 </div>
             </div>
         </div>
     </div>
-    
+   </div>
+
+   <script src="script.js"></script>
 </body>
 </html>
